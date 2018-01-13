@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>HideableToolbarItem.</releaseNotes>
+    <copyright>Copyright (c) Mohamed Ali NOUIRA. All rights reserved.</copyright>
+    <tags>Xamarin Xamarin.Forms ToolKit Controls</tags>
+  </metadata>
+</package>

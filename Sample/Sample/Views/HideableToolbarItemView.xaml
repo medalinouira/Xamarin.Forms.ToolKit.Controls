@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sample.Views.HideableToolbarItemView"
+             Title="HideableToolbarItem"
+             xmlns:controls="clr-namespace:Xamarin.Forms.ToolKit.Controls;assembly=Xamarin.Forms.ToolKit.Controls"
+             BindingContext="{Binding HideableToolbarItem, Source={StaticResource Locator}}">
+
+    <ContentPage.ToolbarItems>
+
+        <controls:HideableToolbarItem IsVisible="{Binding IsVisible, Mode=TwoWay}}"
+                                      Order="Primary"                      
+                                      Icon="ic_xfc.png"                     
+                                      Priority="1"/>
+        
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+
+        <ContentView x:Name="contentView"
+                     ControlTemplate="{StaticResource MyTemplate}">
+
+            <StackLayout VerticalOptions="CenterAndExpand">
+
+                <Button Text="{Binding BtnContent}"
+                        Style="{StaticResource BtnPink}"
+                        Command="{Binding Path=UpdateVisibilityCommand}"/>
+
+            </StackLayout>
+
+        </ContentView>
+
+    </ContentPage.Content>
+
+</ContentPage>

@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <title>Xamarin.Forms.ToolKit.Controls</title>
+    <PackageId>Xamarin.Forms.ToolKit.Controls</PackageId>
+    <PackageVersion>1.0.2</PackageVersion>
+    <Authors>Mohamed Ali NOUIRA</Authors>
+    <Owners>Mohamed Ali NOUIRA</Owners>
+    <Description>Controls for Xamarin.Forms.</Description>
+    <Summary>Controls for Xamarin.Forms.</Summary>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>HideableToolbarItem</PackageReleaseNotes>
+    <Copyright>Copyright (c) Mohamed Ali NOUIRA. All rights reserved.</Copyright>
+    <PackageTags>Xamarin Xamarin.Forms Controls Sweet-MIT</PackageTags>
+    <PackageLicenseUrl>https://www.github.com/medalinouira/Xamarin.Forms.ToolKit.Controls</PackageLicenseUrl>
+    <PackageProjectUrl>https://www.github.com/medalinouira/Xamarin.Forms.ToolKit.Controls</PackageProjectUrl>
+    <PackageIconUrl>https://github.com/medalinouira/Xamarin.Forms.ToolKit.Controls/blob/master/Xamarin.Forms.ToolKit.Controls/ic_xfc.png?raw=true</PackageIconUrl>
+    <RepositoryUrl>https://www.github.com/medalinouira/Xamarin.Forms.ToolKit.Controls</RepositoryUrl>
+    <Version>1.0.2</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ic_xfc.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="ic_xfc.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="2.5.0.121934" />
+  </ItemGroup>
+
+</Project>
